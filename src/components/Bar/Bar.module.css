@@ -1,0 +1,7 @@
+.bar {
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    align-items: center;
+    justify-items: center;
+}

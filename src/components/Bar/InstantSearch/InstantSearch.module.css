@@ -1,0 +1,27 @@
+.search {
+    width: 40%;
+    height: 2em;
+    border: 1px solid red;
+}
+.search input {
+    width: 78%;
+    height: 70%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: none;
+    background: inherit;
+    outline: none;
+}
+
+.search button {
+    width: 20%;
+    height: inherit;
+    border: none;
+    background: inherit;
+    border-left: 1px solid red;
+}
+
+.search button:hover {
+    background: #BE4C46;
+    color: #fff;
+}

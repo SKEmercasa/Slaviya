@@ -1,11 +1,16 @@
-import React from 'react';
+import styleHeader from './Header.module.css';
+import ButtonHeader from './ButtonHeader';
 
-const Header = () => {
+
+
+const Header = (props) => {
+    let block = props.nameBtnHeader.map(name => <ButtonHeader key={name.id} name={name.name} />);
+
     return (
-    <div>
-        1
-    </div>
-    )
-}
+        <div className={styleHeader.header}>
+            {block}
+        </div>
+    );
+};
 
 export default Header;

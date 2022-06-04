@@ -1,0 +1,20 @@
+.content {
+    grid-area: c;
+}
+
+.headerContent {
+    min-height: 9%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #008000;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
+.cardContent {
+    max-height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
