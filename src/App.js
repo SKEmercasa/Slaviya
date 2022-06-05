@@ -2,9 +2,9 @@ import './App.css';
 import TopWrapperContainer from './components/TopWrapper/TopWrapperContainer';
 import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
-import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
+import ContentContainer from './components/Content/ContentContainer';
 
 function App(props) {
   return (
@@ -14,7 +14,7 @@ function App(props) {
         <div className='wrapperMain'>
           <Navbar nameNavbar={props.state.mainPage.nameNavbar} />
           <Banner />
-          <Content cardData={props.state.mainPage.cardData} />
+          <ContentContainer />
         </div>
         <Footer />
       </div>

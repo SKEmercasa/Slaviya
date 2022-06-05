@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Bar from '../Bar/Bar';
+import Header from '../TopWrapper/Header/Header';
+import Bar from '../TopWrapper/Bar/Bar';
 
 const TopWrapper = (props) => {
     return (

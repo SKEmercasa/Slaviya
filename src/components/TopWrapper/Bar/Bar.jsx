@@ -1,5 +1,5 @@
 import styleHeader from './Bar.module.css';
-import logo from '../../logo/slav-logo.png'
+import logo from '../../../logo/slav-logo.png'
 import InstantSearch from './InstantSearch/InstantSearch';
 import MenuBar from './MenuBar/MenuBar';
 

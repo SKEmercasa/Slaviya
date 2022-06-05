@@ -21,6 +21,7 @@
 
 .wrapperNav {
     background: white;
+    width: 15%;
     border:  1px solid #CCCCCC;
     justify-self: center;
     position: absolute;

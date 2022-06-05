@@ -1,8 +1,8 @@
 import styleHeader from './MenuBar.module.css';
-import imgLogin from '../../../logo/login192.png';
-import imgShop from '../../../logo/shop192.png';
-import imgBCall from '../../../logo/BCall192.png';
-import imgMap from '../../../logo/map192.png';
+import imgLogin from '../../../../logo/login192.png';
+import imgShop from '../../../../logo/shop192.png';
+import imgBCall from '../../../../logo/BCall192.png';
+import imgMap from '../../../../logo/map192.png';
 
 const MenuBar = () => {
     return (
