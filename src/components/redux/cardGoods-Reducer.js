@@ -1,8 +1,12 @@
+import { getCards } from "../../api/api";
+
 const SETCARDGOODS = 'setcardgoods';
+const SHOWCURRENTCARD = 'showcurrentcard';
 
 let initialState = {
-    
-    cardData: []
+
+    cardData: [],
+    isShowCurrentCard: []
 };
 
 const cardGoodsReducer = (state = initialState, action) => {
@@ -12,6 +16,11 @@ const cardGoodsReducer = (state = initialState, action) => {
                 ...state,
                 cardData: action.cardData
             }
+        case SHOWCURRENTCARD:
+            return {
+                ...state,
+                isShowCurrentCard: action.card
+            }
         default:
             return state;
     }
@@ -19,9 +28,12 @@ const cardGoodsReducer = (state = initialState, action) => {
 
 export default cardGoodsReducer;
 
-export const setCardGoodsAC = (cardData) => {
-    return {
-        type: SETCARDGOODS,
-        cardData: cardData
-    }
+const setCardGoodsAC = (cardData) => ({ type: SETCARDGOODS, cardData: cardData });
+export const setCardGoods = () => {
+    return (dispatch) => { getCards().then(data => dispatch(setCardGoodsAC(data))) }
+}
+
+const showCurrentCardAC = (card) => ({ type: SHOWCURRENTCARD, card: card });
+export const showCurrentCard = () => {
+    return (dispatch) => { getCards().then(data => dispatch(showCurrentCardAC(data))) }
 }

@@ -1,10 +1,11 @@
 import './App.css';
 import TopWrapperContainer from './components/TopWrapper/TopWrapperContainer';
 import Navbar from './components/Navbar/Navbar';
-import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter } from 'react-router-dom';
-import ContentContainer from './components/Content/ContentContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ContentMain from './components/ContentMain/ContentMain';
+import ContentCardContainer from './components/ContentCard/ContentCardContainer';
+
 
 function App(props) {
   return (
@@ -13,8 +14,10 @@ function App(props) {
         <TopWrapperContainer />
         <div className='wrapperMain'>
           <Navbar nameNavbar={props.state.mainPage.nameNavbar} />
-          <Banner />
-          <ContentContainer />
+          <Routes>
+            <Route exact path="/" element={<ContentMain />} />
+            <Route path='/card/:cardId' element={<ContentCardContainer />} />
+          </Routes>
         </div>
         <Footer />
       </div>

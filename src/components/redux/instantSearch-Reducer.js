@@ -53,13 +53,13 @@ const instantSearchReducer = (state = initialState, action) => {
 
 export default instantSearchReducer;
 
-export const buttonReplacementAC = () => {
+export const searchClick = () => {
     return {
         type: BUTTONREPLACEMENT
     }
 }
 
-export const enterSearchStringAC = (word) => {
+export const searchLine = (word) => {
     return {
         type: ENTERSEARCHSTRING,
         word: word

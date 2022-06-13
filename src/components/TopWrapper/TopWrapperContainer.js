@@ -1,4 +1,4 @@
-import { enterSearchStringAC, buttonReplacementAC } from '../redux/instantSearch-Reducer';
+import { searchLine, searchClick } from '../redux/instantSearch-Reducer';
 import TopWrapper from './TopWrapper';
 import { connect } from 'react-redux';
 
@@ -9,13 +9,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        searchLine: (word) => { dispatch(enterSearchStringAC(word)) },
-        searchClick: () => { dispatch(buttonReplacementAC()) }
-    }
-}
-
-const TopWrapperContainer = connect(mapStateToProps, mapDispatchToProps)(TopWrapper);
+const TopWrapperContainer = connect(mapStateToProps, { searchLine, searchClick })(TopWrapper);
 
 export default TopWrapperContainer;

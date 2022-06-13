@@ -2,9 +2,9 @@ import React from "react";
 import styleMain from './Banner.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import image1 from '../../logo/banner/1.jpg';
-import image2 from '../../logo/banner/2.jpg';
-import image3 from '../../logo/banner/3.jpg';
+import image1 from '../../../logo/banner/1.jpg';
+import image2 from '../../../logo/banner/2.jpg';
+import image3 from '../../../logo/banner/3.jpg';
 
 const Banner = () => {
     return (
